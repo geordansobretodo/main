@@ -39,4 +39,70 @@ class home_controller extends CI_Controller {
 		$this->load->view('pages/services');
 		$this->load->view('templates/footer');
 	}
+
+	public function blog() {
+		$this->load->view('templates/header');
+		$this->load->view('pages/blog');
+		$this->load->view('templates/footer');
+	}
+
+	public function booking() {
+		$this->load->view('templates/header');
+		$this->load->view('pages/booking');
+		$this->load->view('templates/footer');
+	}
+
+	public function contact() {
+		$this->load->view('templates/header');
+		$this->load->view('pages/contact');
+		$this->load->view('templates/footer');
+	}
+
+	public function destination() {
+		$this->load->view('templates/header');
+		$this->load->view('pages/destination');
+		$this->load->view('templates/footer');
+	}
+
+	public function gallery() {
+		$this->load->view('templates/header');
+		$this->load->view('pages/gallery');
+		$this->load->view('templates/footer');
+	}
+
+	public function guides() {
+		$this->load->view('templates/header');
+		$this->load->view('pages/guides');
+		$this->load->view('templates/footer');
+	}
+
+	public function packages() {
+		$this->load->view('templates/header');
+		$this->load->view('pages/packages');
+		$this->load->view('templates/footer');
+	}
+	
+	public function sample() {
+		$this->load->view('templates/header');
+		$this->load->view('pages/sample');
+		$this->load->view('templates/footer');
+	}
+
+	public function testimonial() {
+		$this->load->view('templates/header');
+		$this->load->view('pages/testimonial');
+		$this->load->view('templates/footer');
+	}
+
+	public function tour() {
+		$this->load->view('templates/header');
+		$this->load->view('pages/tour');
+		$this->load->view('templates/footer');
+	}
+
+	public function page_not_found() {
+		$this->load->view('templates/header');
+		$this->load->view('pages/404');
+		$this->load->view('templates/footer');
+	}
 }

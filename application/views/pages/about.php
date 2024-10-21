@@ -17,7 +17,7 @@
             <div class="row g-5 align-items-center">
                 <div class="col-lg-5">
                     <div class="h-100" style="border: 50px solid; border-color: transparent #13357B transparent #13357B;">
-                        <img src="img/about-img.jpg" class="img-fluid w-100 h-100" alt="">
+                        <img src="<?= base_url('img/about-img.jpg')?>" class="img-fluid w-100 h-100" alt="">
                     </div>
                 </div>
                 <div class="col-lg-7" style="background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(img/about-img-1.png);">
@@ -64,7 +64,7 @@
                     <div class="guide-item">
                         <div class="guide-img">
                             <div class="guide-img-efects">
-                                <img src="img/guide-1.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                                <img src="<?= base_url('img/guide-1.jpg')?>" class="img-fluid w-100 rounded-top" alt="Image">
                             </div>
                             <div class="guide-icon rounded-pill p-2">
                                 <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
@@ -85,7 +85,7 @@
                     <div class="guide-item">
                         <div class="guide-img">
                             <div class="guide-img-efects">
-                                <img src="img/guide-2.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                                <img src="<?= base_url('img/guide-2.jpg')?>" class="img-fluid w-100 rounded-top" alt="Image">
                             </div>
                             <div class="guide-icon rounded-pill p-2">
                                 <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
@@ -106,7 +106,7 @@
                     <div class="guide-item">
                         <div class="guide-img">
                             <div class="guide-img-efects">
-                                <img src="img/guide-3.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                                <img src="<?= base_url('img/guide-3.jpg')?>" class="img-fluid w-100 rounded-top" alt="Image">
                             </div>
                             <div class="guide-icon rounded-pill p-2">
                                 <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
@@ -127,7 +127,7 @@
                     <div class="guide-item">
                         <div class="guide-img">
                             <div class="guide-img-efects">
-                                <img src="img/guide-4.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                                <img src="<?= base_url('img/guide-4.jpg')?>" class="img-fluid w-100 rounded-top" alt="Image">
                             </div>
                             <div class="guide-icon rounded-pill p-2">
                                 <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
