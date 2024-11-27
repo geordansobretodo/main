@@ -94,10 +94,9 @@
                             <a href="<?= base_url('home_controller/destination')?>" class="dropdown-item">Destination</a>
                             <a href="<?= base_url('home_controller/tour')?>" class="dropdown-item">Explore Tour</a>
                             <a href="<?= base_url('home_controller/booking')?>" class="dropdown-item">Travel Booking</a>
-                            <a href="gallery.html" class="dropdown-item">Our Gallery</a>
-                            <a href="guides.html" class="dropdown-item">Travel Guides</a>
-                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                            <a href="404.html" class="dropdown-item">404 Page</a>
+                            <a href="<?= base_url('home_controller/gallery')?>" class="dropdown-item">Our Gallery</a>
+                            <a href="<?= base_url('home_controller/guides')?>" class="dropdown-item">Travel Guides</a>
+                            <a href="<?= base_url('home_controller/testimonial')?>" class="dropdown-item">Testimonial</a>
                         </div>
                     </div>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>

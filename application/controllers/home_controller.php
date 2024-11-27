@@ -99,10 +99,4 @@ class home_controller extends CI_Controller {
 		$this->load->view('pages/tour');
 		$this->load->view('templates/footer');
 	}
-
-	public function page_not_found() {
-		$this->load->view('templates/header');
-		$this->load->view('pages/404');
-		$this->load->view('templates/footer');
-	}
 }
