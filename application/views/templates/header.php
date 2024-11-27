@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Travela - Tourism Website Template</title>
+    <title>GALA.ai</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -75,7 +75,7 @@
     <div class="container-fluid position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
             <a href="" class="navbar-brand p-0">
-                <h1 class="m-0"><i class="fa fa-map-marker-alt me-3"></i>Travela</h1>
+                <h1 class="m-0"><i class="fa fa-map-marker-alt me-3"></i>GALA.ai</h1>
                 <!-- <img src="img/logo.png" alt="Logo"> -->
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -85,15 +85,15 @@
                 <div class="navbar-nav ms-auto py-0">
                     <a href="<?= base_url('home_controller/index')?>" class="nav-item nav-link">Home</a>
                     <a href="<?= base_url('home_controller/about')?>" class="nav-item nav-link">About</a>
-                    <a href="services.html" class="nav-item nav-link">Services</a>
+                    <a href="<?= base_url('home_controller/services')?>" class="nav-item nav-link">Services</a>
                     <a href="packages.html" class="nav-item nav-link">Packages</a>
                     <a href="blog.html" class="nav-item nav-link">Blog</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                         <div class="dropdown-menu m-0">
-                            <a href="destination.html" class="dropdown-item">Destination</a>
-                            <a href="tour.html" class="dropdown-item">Explore Tour</a>
-                            <a href="booking.html" class="dropdown-item">Travel Booking</a>
+                            <a href="<?= base_url('home_controller/destination')?>" class="dropdown-item">Destination</a>
+                            <a href="<?= base_url('home_controller/tour')?>" class="dropdown-item">Explore Tour</a>
+                            <a href="<?= base_url('home_controller/booking')?>" class="dropdown-item">Travel Booking</a>
                             <a href="gallery.html" class="dropdown-item">Our Gallery</a>
                             <a href="guides.html" class="dropdown-item">Travel Guides</a>
                             <a href="testimonial.html" class="dropdown-item">Testimonial</a>

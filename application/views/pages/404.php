@@ -18,15 +18,15 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
         <!-- Libraries Stylesheet -->
-        <link href="<?= base_url('lib/owlcarousel/assets/owl.carousel.min.css')?>" rel="stylesheet">
-        <link href="<?= base_url('lib/lightbox/css/lightbox.min.css')?>" rel="stylesheet">
+        <link href="<?= base_url('assets/lib/owlcarousel/assets/owl.carousel.min.css')?>" rel="stylesheet">
+        <link href="<?= base_url('assets/lib/lightbox/css/lightbox.min.css')?>" rel="stylesheet">
 
 
         <!-- Customized Bootstrap Stylesheet -->
-        <link href="<?= base_url('css/bootstrap.min.css')?>" rel="stylesheet">
+        <link href="<?= base_url('assets/css/bootstrap.min.css')?>" rel="stylesheet">
 
         <!-- Template Stylesheet -->
-        <link href="<?= base_url('css/style.css')?>" rel="stylesheet">
+        <link href="<?= base_url('assets/css/style.css')?>" rel="stylesheet">
     </head>
 
     <body>
@@ -94,7 +94,7 @@
                                 <a href="<?= base_url('home_controller/destinations')?>" class="dropdown-item">Destination</a>
                                 <a href="<?= base_url('home_controller/tour')?>" class="dropdown-item">Explore Tour</a>
                                 <a href="<?= base_url('home_controller/booking')?>" class="dropdown-item">Travel Booking</a>
-                                <a href="<?= base_url('home_controller/booking')?>" class="dropdown-item">Our Gallery</a>
+                                <a href="<?= base_url('home_controller/galleries')?>" class="dropdown-item">Our Gallery</a>
                                 <a href="<?= base_url('home_controller/guides')?>" class="dropdown-item">Travel Guides</a>
                                 <a href="<?= base_url('home_controller/testimonial')?>" class="dropdown-item">Testimonial</a>
                                 <a href="<?= base_url('home_controller/page_not_found')?>" class="dropdown-item active">404 Page</a>
