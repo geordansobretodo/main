@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Travela - Tourism Website Template</title>
+        <title>GALA.ai - Tourism Website Template</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
@@ -18,15 +18,15 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
         <!-- Libraries Stylesheet -->
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="<?= base_url('lib/owlcarousel/assets/owl.carousel.min.css')?>" rel="stylesheet">
+        <link href="<?= base_url('lib/lightbox/css/lightbox.min.css')?>" rel="stylesheet">
 
 
         <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="<?= base_url('assets/css/bootstrap.min.css')?>" rel="stylesheet">
 
         <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
+        <link href="<?= base_url('assets/css/style.css')?>" rel="stylesheet">
     </head>
 
     <body>
@@ -75,7 +75,7 @@
         <div class="container-fluid position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
                 <a href="" class="navbar-brand p-0">
-                    <h1 class="m-0"><i class="fa fa-map-marker-alt me-3"></i>Travela</h1>
+                    <h1 class="m-0"><i class="fa fa-map-marker-alt me-3"></i>GALA.ai</h1>
                     <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -335,7 +335,7 @@
         
 
         <!-- Template Javascript -->
-        <script src="js/main.js"></script>
+        <script src="<?= base_url('assets/js/main.js')?>"></script>
     </body>
 
 </html>
