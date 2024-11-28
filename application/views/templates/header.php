@@ -101,6 +101,9 @@
                     </div>
                     <a href="<?= base_url('home_controller/contact')?>" class="nav-item nav-link">Contact</a>
                 </div>
-                <a href="" class="btn btn-primary rounded-pill py-2 px-4 ms-lg-4">Book Now</a>
+                <a href="<?= base_url('home_controller/form')?>" class="btn btn-primary rounded-pill py-2 px-4 ms-lg-4">Book Now</a>
             </div>
         </nav>
+    
+   
+

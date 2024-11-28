@@ -99,4 +99,12 @@ class home_controller extends CI_Controller {
 		$this->load->view('pages/tour');
 		$this->load->view('templates/footer');
 	}
+
+	/*** Form page */
+	public function form() {
+		# $this->load->view('templates/header');
+		$this->load->view('pages/form');
+		# $this->load->view('templates/footer');
+	}
+
 }
