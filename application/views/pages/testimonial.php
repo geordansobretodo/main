@@ -25,7 +25,7 @@
                             </p>
                         </div>
                         <div class="testimonial-img p-1">
-                            <img src="img/testimonial-1.jpg" class="img-fluid rounded-circle" alt="Image">
+                            <img src="assets/img/testimonial-1.jpg" class="img-fluid rounded-circle" alt="Image">
                         </div>
                         <div style="margin-top: -35px;">
                             <h5 class="mb-0">John Abraham</h5>
@@ -45,7 +45,7 @@
                             </p>
                         </div>
                         <div class="testimonial-img p-1">
-                            <img src="img/testimonial-2.jpg" class="img-fluid rounded-circle" alt="Image">
+                            <img src="assets/img/testimonial-2.jpg" class="img-fluid rounded-circle" alt="Image">
                         </div>
                         <div style="margin-top: -35px;">
                             <h5 class="mb-0">John Abraham</h5>
@@ -65,7 +65,7 @@
                             </p>
                         </div>
                         <div class="testimonial-img p-1">
-                            <img src="img/testimonial-3.jpg" class="img-fluid rounded-circle" alt="Image">
+                            <img src="assets/img/testimonial-3.jpg" class="img-fluid rounded-circle" alt="Image">
                         </div>
                         <div style="margin-top: -35px;">
                             <h5 class="mb-0">John Abraham</h5>
@@ -85,7 +85,7 @@
                             </p>
                         </div>
                         <div class="testimonial-img p-1">
-                            <img src="img/testimonial-4.jpg" class="img-fluid rounded-circle" alt="Image">
+                            <img src="assets/img/testimonial-4.jpg" class="img-fluid rounded-circle" alt="Image">
                         </div>
                         <div style="margin-top: -35px;">
                             <h5 class="mb-0">John Abraham</h5>

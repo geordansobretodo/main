@@ -38,7 +38,7 @@
                             <div class="row g-4">
                                 <div class="col-md-6 col-lg-4">
                                     <div class="national-item">
-                                        <img src="img/explore-tour-1.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                        <img src="assets/img/explore-tour-1.jpg" class="img-fluid w-100 rounded" alt="Image">
                                         <div class="national-content">
                                             <div class="national-info">
                                                 <h5 class="text-white text-uppercase mb-2">Weekend Tour</h5>
@@ -52,7 +52,7 @@
                                 </div>
                                 <div class="col-md-6 col-lg-4">
                                     <div class="national-item">
-                                        <img src="img/explore-tour-2.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                        <img src="assets/img/explore-tour-2.jpg" class="img-fluid w-100 rounded" alt="Image">
                                         <div class="national-content">
                                             <div class="national-info">
                                                 <h5 class="text-white text-uppercase mb-2">Holiday Tour</h5>
@@ -66,7 +66,7 @@
                                 </div>
                                 <div class="col-md-6 col-lg-4">
                                     <div class="national-item">
-                                        <img src="img/explore-tour-3.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                        <img src="assets/img/explore-tour-3.jpg" class="img-fluid w-100 rounded" alt="Image">
                                         <div class="national-content">
                                             <div class="national-info">
                                                 <h5 class="text-white text-uppercase mb-2">Road Trip</h5>
@@ -81,7 +81,7 @@
                                 </div>
                                 <div class="col-md-6 col-lg-4">
                                     <div class="national-item">
-                                        <img src="img/explore-tour-4.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                        <img src="assets/img/explore-tour-4.jpg" class="img-fluid w-100 rounded" alt="Image">
                                         <div class="national-content">
                                             <div class="national-info">
                                                 <h5 class="text-white text-uppercase mb-2">Historical Trip</h5>
@@ -95,7 +95,7 @@
                                 </div>
                                 <div class="col-md-6 col-lg-4">
                                     <div class="national-item">
-                                        <img src="img/explore-tour-5.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                        <img src="assets/img/explore-tour-5.jpg" class="img-fluid w-100 rounded" alt="Image">
                                         <div class="national-content">
                                             <div class="national-info">
                                                 <h5 class="text-white text-uppercase mb-2">Family Tour</h5>
@@ -110,7 +110,7 @@
                                 </div>
                                 <div class="col-md-6 col-lg-4">
                                     <div class="national-item">
-                                        <img src="img/explore-tour-6.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                        <img src="assets/img/explore-tour-6.jpg" class="img-fluid w-100 rounded" alt="Image">
                                         <div class="national-content">
                                             <div class="national-info">
                                                 <h5 class="text-white text-uppercase mb-2">Beach Tour</h5>
@@ -127,7 +127,7 @@
                         <div id="InternationalTab-2" class="tab-pane fade show p-0">
                             <div class="InternationalTour-carousel owl-carousel">
                                 <div class="international-item">
-                                    <img src="img/explore-tour-1.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                    <img src="assets/img/explore-tour-1.jpg" class="img-fluid w-100 rounded" alt="Image">
                                     <div class="international-content">
                                         <div class="international-info">
                                             <h5 class="text-white text-uppercase mb-2">Australia</h5>
@@ -141,7 +141,7 @@
                                     </div>
                                 </div>
                                 <div class="international-item">
-                                    <img src="img/explore-tour-2.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                    <img src="assets/img/explore-tour-2.jpg" class="img-fluid w-100 rounded" alt="Image">
                                     <div class="international-content">
                                         <div class="international-info">
                                             <h5 class="text-white text-uppercase mb-2">Germany</h5>
@@ -154,7 +154,7 @@
                                     </div>
                                 </div>
                                 <div class="international-item">
-                                    <img src="img/explore-tour-3.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                    <img src="assets/img/explore-tour-3.jpg" class="img-fluid w-100 rounded" alt="Image">
                                     <div class="international-content">
                                         <div class="tour-offer bg-warning">45% Off</div>
                                         <div class="international-info">
@@ -168,7 +168,7 @@
                                     </div>
                                 </div>
                                 <div class="international-item">
-                                    <img src="img/explore-tour-4.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                    <img src="assets/img/explore-tour-4.jpg" class="img-fluid w-100 rounded" alt="Image">
                                     <div class="international-content">
                                         <div class="international-info">
                                             <h5 class="text-white text-uppercase mb-2">Japan</h5>
@@ -181,7 +181,7 @@
                                     </div>
                                 </div>
                                 <div class="international-item">
-                                    <img src="img/explore-tour-5.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                    <img src="assets/img/explore-tour-5.jpg" class="img-fluid w-100 rounded" alt="Image">
                                     <div class="international-content">
                                         <div class="tour-offer bg-info">70% Off</div>
                                         <div class="international-info">
