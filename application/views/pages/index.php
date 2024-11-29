@@ -26,7 +26,7 @@
                 <div class="carousel-caption">
                     <div class="p-3" style="max-width: 900px;">
                         <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Explore The World</h4>
-                        <h1 class="display-2 text-capitalize text-white mb-4">Find Your Perfect Tour At Travel</h1>
+                        <h1 class="display-2 text-capitalize text-white mb-4">Find Your Perfect Tour At GALA.ai</h1>
                         <p class="mb-5 fs-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                         </p>
                         <div class="d-flex align-items-center justify-content-center">
