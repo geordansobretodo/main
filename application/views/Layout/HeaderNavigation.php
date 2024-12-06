@@ -6,6 +6,32 @@
 </div> -->
 <!-- Spinner End -->
 
+<!-- Flashdata Modal -->
+<?php if ($this->session->flashdata()) { ?>
+    <div class="modal fade" id="flashdataModal" tabindex="-1" aria-labelledby="flashdataModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header <?= $this->session->flashdata('register_error') ? 'bg-danger' : 'bg-secondary'; ?>">
+                    <h5 class="modal-title text-white" id="flashdataModalLabel">
+                        <?= ($this->session->flashdata('login_success') ? 'Success' : 'Error'); ?>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: white;"></button>
+                </div>
+                <div class="modal-body">
+                    <?php
+                    if ($this->session->flashdata('register_success')) { ?>
+                        <p><?= $this->session->flashdata('register_success'); ?></p>
+                    <?php } elseif ($this->session->flashdata('login_success')) { ?>
+                        <p><?= $this->session->flashdata('login_success'); ?></p> 
+                    <?php } elseif ($this->session->flashdata('register_error')) { ?>
+                        <p><?= $this->session->flashdata('register_error'); ?></p> 
+                    <?php } ?> 
+                </div>
+            </div>
+        </div>
+    </div>
+<?php } ?>
+
 <!-- Topbar Start -->
 <div class="container-fluid bg-primary px-5 d-none d-lg-block">
     <div class="row gx-0">
@@ -41,21 +67,6 @@
     </div>
 </div>
 <!-- Topbar End -->
-
-
-<?php if ($this->session->flashdata('register_success')) { ?>
-    <div class="alert alert-secondary" role="alert">
-        <?= $this->session->flashdata('register_success'); ?>
-    </div>
-<?php } elseif ($this->session->flashdata('login_sucess')) { ?>
-    <div class="alert alert-secondary" role="alert">
-        <?= $this->session->flashdata('login_sucess'); ?>
-    </div>
-<?php } elseif ($this->session->flashdata('register_error')) { ?>
-    <div class="alert alert-danger" role="alert">
-        <?= $this->session->flashdata('register_error'); ?>
-    </div>
-<?php } ?>
 
 <!-- Navbar & Hero Start -->
 <div class="container-fluid position-relative p-0">

@@ -40,7 +40,7 @@ class Login extends MY_Controller
 
                 $this->session->set_userdata($user_data);
                 $this->session->set_userdata('log', 'logged');
-                $this->session->set_flashdata('login_sucess', 'You are now logged in!');
+                $this->session->set_flashdata('login_success', 'You are now logged in!');
                 $this->render($this->set_views->home(), 'Home');
             } else {
                 $this->session->set_flashdata('login_error', 'Invalid name or password');

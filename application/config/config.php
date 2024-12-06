@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 // $config['base_url'] = 'http://gala-ai.infinityfreeapp.com/';
-$config['base_url'] = 'http://localhost/thesis/';
+$config['base_url'] = 'http://localhost/main/';
 
 /*
 |--------------------------------------------------------------------------
