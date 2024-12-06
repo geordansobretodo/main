@@ -1,6 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+$route['Home'] = 'Home/index';
 $route['About'] = 'Home/about';
 $route['Services'] = 'Home/services';
 $route['Packages'] = 'Home/packages';

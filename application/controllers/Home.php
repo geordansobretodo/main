@@ -4,121 +4,137 @@ defined('BASEPATH') or exit('No direct script access allowed');
 class Home extends MY_Controller
 {
 
-	public function __construct() {
-		parent::__construct();
-		
-        $this->load->library('Set_views');
-	}
+        public function __construct()
+        {
+                parent::__construct();
 
-	public function index() {
-		$this->home();
-	}
+                $this->load->library('Set_views');
+        }
 
-	public function home() {
-        // if ($this->session->userdata('log') != 'logged') {
-        //     redirect('Login/index');
-        // } else {
-            $this->render($this->set_views->home(), 'Home');
-        // }
-	}
+        public function index()
+        {
+                $this->home();
+        }
 
-    public function about() {
-        // if ($this->session->userdata('log') != 'logged') {
-        //     redirect('Login/index');
-        // } else {
-		    $this->render($this->set_views->about(), 'About');
-        // }
-	}
+        public function home()
+        {
+                // if ($this->session->userdata('log') != 'logged') {
+                //     redirect('Login/index');
+                // } else {
+                $this->render($this->set_views->home(), 'Home');
+                // }
+        }
 
-	public function services() {
-        // if ($this->session->userdata('log') != 'logged') {
-        //     redirect('Login/index');
-        // } else {
-		    $this->render($this->set_views->services(), 'Services');
-        // }
-	}
+        public function about()
+        {
+                // if ($this->session->userdata('log') != 'logged') {
+                //     redirect('Login/index');
+                // } else {
+                $this->render($this->set_views->about(), 'About');
+                // }
+        }
 
-	public function blog() {
-        // if ($this->session->userdata('log') != 'logged') {
-        //     redirect('Login/index');
-        // } else {
-		    $this->render($this->set_views->blog(), 'Blog');
-        // }
-	}
+        public function services()
+        {
+                // if ($this->session->userdata('log') != 'logged') {
+                //     redirect('Login/index');
+                // } else {
+                $this->render($this->set_views->services(), 'Services');
+                // }
+        }
 
-	public function booking() {
-        // if ($this->session->userdata('log') != 'logged') {
-        //     redirect('Login/index');
-        // } else {
-		    $this->render($this->set_views->booking(), 'Booking');
-        // }
-	}
+        public function blog()
+        {
+                // if ($this->session->userdata('log') != 'logged') {
+                //     redirect('Login/index');
+                // } else {
+                $this->render($this->set_views->blog(), 'Blog');
+                // }
+        }
 
-	public function contact() {
-        // if ($this->session->userdata('log') != 'logged') {
-        //     redirect('Login/index');
-        // } else {
-		    $this->render($this->set_views->contact(), 'Contact');
-        // }
-	}
+        public function booking()
+        {
+                // if ($this->session->userdata('log') != 'logged') {
+                //     redirect('Login/index');
+                // } else {
+                $this->render($this->set_views->booking(), 'Booking');
+                // }
+        }
 
-	public function destination() {
-		$this->render($this->set_views->destination(), 'Home');
-	}
+        public function contact()
+        {
+                // if ($this->session->userdata('log') != 'logged') {
+                //     redirect('Login/index');
+                // } else {
+                $this->render($this->set_views->contact(), 'Contact');
+                // }
+        }
 
-	public function gallery() {
-        // if ($this->session->userdata('log') != 'logged') {
-        //     redirect('Login/index');
-        // } else {
-		    $this->render($this->set_views->galleries(), 'Gallery');
-        // }
-	}
+        public function destination()
+        {
+                $this->render($this->set_views->destination(), 'Home');
+        }
 
-	public function guides() {
-        // if ($this->session->userdata('log') != 'logged') {
-        //     redirect('Login/index');
-        // } else {
-		    $this->render($this->set_views->guides(), 'Guides');
-        // }
-	}
+        public function gallery()
+        {
+                // if ($this->session->userdata('log') != 'logged') {
+                //     redirect('Login/index');
+                // } else {
+                $this->render($this->set_views->galleries(), 'Gallery');
+                // }
+        }
 
-	public function packages() {
-        // if ($this->session->userdata('log') != 'logged') {
-        //     redirect('Login/index');
-        // } else {
-		    $this->render($this->set_views->packages(), 'Packages');
-        // }
-	}
-	
-	public function sample() {
-        // if ($this->session->userdata('log') != 'logged') {
-        //     redirect('Login/index');
-        // } else {
-		    $this->render($this->set_views->sample(), 'Sample');
-        // }
-	}
+        public function guides()
+        {
+                // if ($this->session->userdata('log') != 'logged') {
+                //     redirect('Login/index');
+                // } else {
+                $this->render($this->set_views->guides(), 'Guides');
+                // }
+        }
 
-	public function testimonial() {
-        // if ($this->session->userdata('log') != 'logged') {
-        //     redirect('Login/index');
-        // } else {
-		    $this->render($this->set_views->testimonial(), 'Testimonial');
-        // }
-	}
+        public function packages()
+        {
+                // if ($this->session->userdata('log') != 'logged') {
+                //     redirect('Login/index');
+                // } else {
+                $this->render($this->set_views->packages(), 'Packages');
+                // }
+        }
 
-	public function tour() {
-        // if ($this->session->userdata('log') != 'logged') {
-        //     redirect('Login/index');
-        // } else {
-		    $this->render($this->set_views->tour(), 'Tour');
-        // }
-	}
+        public function sample()
+        {
+                // if ($this->session->userdata('log') != 'logged') {
+                //     redirect('Login/index');
+                // } else {
+                $this->render($this->set_views->sample(), 'Sample');
+                // }
+        }
 
-	public function form() {
-        // if ($this->session->userdata('log') != 'logged') {
-        //     redirect('Login/index');
-        // } else {
-		    $this->render($this->set_views->form(), 'Booking');
-        // }
-	}
+        public function testimonial()
+        {
+                // if ($this->session->userdata('log') != 'logged') {
+                //     redirect('Login/index');
+                // } else {
+                $this->render($this->set_views->testimonial(), 'Testimonial');
+                // }
+        }
+
+        public function tour()
+        {
+                // if ($this->session->userdata('log') != 'logged') {
+                //     redirect('Login/index');
+                // } else {
+                $this->render($this->set_views->tour(), 'Tour');
+                // }
+        }
+
+        public function form()
+        {
+                // if ($this->session->userdata('log') != 'logged') {
+                //     redirect('Login/index');
+                // } else {
+                $this->render_booking($this->set_views->form(), 'Booking');
+                // }
+        }
 }

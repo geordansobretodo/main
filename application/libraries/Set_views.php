@@ -6,6 +6,20 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Set_views
 {
+    // LOGIN
+
+    public function login()
+    {
+        return 'pages/login';
+    }
+
+    // REGISTER
+
+    public function register()
+    {
+        return 'pages/register';
+    }
+
     // HOME
 
     public function home()
@@ -70,25 +84,11 @@ class Set_views
         return 'pages/guides';
     }
 
-    // LOGIN
-
-    public function login()
-    {
-        return 'Login/login';
-    }
-
     // PACKAGES
 
     public function packages()
     {
         return 'pages/packages';
-    }
-
-    // REGISTER
-
-    public function register()
-    {
-        return 'Login/register';
     }
 
     // SERVICES

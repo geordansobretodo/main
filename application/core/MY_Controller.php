@@ -29,11 +29,11 @@ class MY_Controller extends CI_Controller
             $middleParam = $this->middle;
         }
         $this->template['title'] = $title;
-        $this->template['headerscripts'] = $this->load->view('Layout/HeaderScripts.php', $this->data, true);
-        $this->template['header'] = $this->load->view('Layout/HeaderNavigation.php', $this->data, true);
+        $this->template['headerscripts'] = $this->load->view('Home/HeaderScripts.php', $this->data, true);
+        $this->template['header'] = $this->load->view('Home/HeaderNavigation.php', $this->data, true);
         $this->template['middle'] = $this->load->view($middleParam . '.php', $this->data, true);
-        $this->template['footer'] = $this->load->view('Layout/FooterNavigation.php', $this->data, true);
-        $this->template['endlinks'] = $this->load->view('Layout/FooterScripts.php', $this->data, true);
+        $this->template['footer'] = $this->load->view('Home/FooterNavigation.php', $this->data, true);
+        $this->template['endlinks'] = $this->load->view('Home/FooterScripts.php', $this->data, true);
 
         $this->load->view('Layout/Front', $this->template);
     }
@@ -53,6 +53,21 @@ class MY_Controller extends CI_Controller
         $this->template['headerscripts'] = $this->load->view('Login/HeaderScripts.php', $this->data, true);
         $this->template['middle'] = $this->load->view($middleParam . '.php', $this->data, true);
         $this->template['footerscripts'] = $this->load->view('Login/FooterScripts.php', $this->data, true);
+
         $this->load->view('Layout/LoginFront', $this->template, $data);
+    }
+
+    public function render_booking($middleParam = '', $title  = '', $data = [])
+    {
+
+        if ($middleParam == '') {
+            $middleParam = $this->middle;
+        }
+        $this->template['title'] = $title;
+        $this->template['headerscripts'] = $this->load->view('Booking/HeaderScripts.php', $this->data, true);
+        $this->template['middle'] = $this->load->view($middleParam . '.php', $this->data, true);
+        $this->template['footerscripts'] = $this->load->view('Booking/FooterScripts.php', $this->data, true);
+
+        $this->load->view('Layout/BookingFront', $this->template, $data);
     }
 }
