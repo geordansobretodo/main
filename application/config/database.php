@@ -75,10 +75,32 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
+	'hostname' => 'sql309.infinityfree.com',
+	'username' => 'if0_37807596',
+	'password' => 'qeVioNb5voZXe',
+	'database' => 'if0_37807596_galaai',
+	'dbdriver' => 'mysqli',
+	'dbprefix' => '',
+	'pconnect' => FALSE,
+	'db_debug' => (ENVIRONMENT !== 'production'),
+	'cache_on' => FALSE,
+	'cachedir' => '',
+	'char_set' => 'utf8',
+	'dbcollat' => 'utf8_general_ci',
+	'swap_pre' => '',
+	'encrypt' => FALSE,
+	'compress' => FALSE,
+	'stricton' => FALSE,
+	'failover' => array(),
+	'save_queries' => TRUE
+);
+
+$db['local'] = array(
+	'dsn'	=> '',
 	'hostname' => 'localhost',
 	'username' => 'root',
 	'password' => '',
-	'database' => 'crud',
+	'database' => 'galaai',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

@@ -12,7 +12,7 @@
                 <div class="carousel-caption">
                     <div class="p-3" style="max-width: 900px;">
                         <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Explore The World</h4>
-                        <h1 class="display-2 text-capitalize text-white mb-4">Let's The World Together!</h1>
+                        <h1 class="display-2 text-capitalize text-white mb-4">The World Together!</h1>
                         <p class="mb-5 fs-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                         </p>
                         <div class="d-flex align-items-center justify-content-center">
@@ -26,7 +26,7 @@
                 <div class="carousel-caption">
                     <div class="p-3" style="max-width: 900px;">
                         <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Explore The World</h4>
-                        <h1 class="display-2 text-capitalize text-white mb-4">Find Your Perfect Tour At GALA.ai</h1>
+                        <h1 class="display-2 text-capitalize text-white mb-4">Find Your Perfect Tour At Travel</h1>
                         <p class="mb-5 fs-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                         </p>
                         <div class="d-flex align-items-center justify-content-center">
@@ -362,7 +362,7 @@
                         </div>
                         <div class="col-lg-4">
                             <div class="destination-img">
-                                <img class="img-fluid rounded w-100" src="img/destination-5.jpg" alt="">
+                                <img class="img-fluid rounded w-100" src="<?= base_url('assets/img/destination-5.jpg') ?>" alt="">
                                 <div class="destination-overlay p-4">
                                     <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">20 Photos</a>
                                     <h4 class="text-white mb-2 mt-3">Los angelas</h4>
@@ -422,7 +422,7 @@
                     <div class="row g-4">
                         <div class="col-lg-6">
                             <div class="destination-img">
-                                <img class="img-fluid rounded w-100" src="img/destination-5.jpg" alt="">
+                                <img class="img-fluid rounded w-100" src="<?= base_url('img/destination-5.jpg')?>" alt="">
                                 <div class="destination-overlay p-4">
                                     <a href="#" class="btn btn-primary text-white rounded-pill border py-2 px-3">20 Photos</a>
                                     <h4 class="text-white mb-2 mt-3">San francisco</h4>
