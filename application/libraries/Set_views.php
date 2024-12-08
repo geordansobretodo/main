@@ -111,4 +111,16 @@ class Set_views
     {
         return 'pages/tour';
     }
+
+    // ERROR
+
+    public function not_found() {
+        return 'pages/404';
+    }
+
+    // PROFILE
+
+    public function profile() {
+        return 'pages/profile';
+    }
 }

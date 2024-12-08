@@ -53,6 +53,7 @@ class Login extends MY_Controller
         $this->session->unset_userdata('log');
         $this->session->sess_destroy();
 
+        $this->session->set_flashdata('logout_success', 'Logged out successfully!');
         $this->render($this->set_views->home(), 'Home');
     }
 }

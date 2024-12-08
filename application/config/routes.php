@@ -10,10 +10,13 @@ $route['Contact'] = 'Home/contact';
 $route['Booking'] = 'Home/form';
 
 $route['Login'] = 'Login';
+$route['Logout'] = 'Login/logout';
 $route['Register'] = 'Register';
 
-$route['default_controller'] = 'Home';
-$route['(:any)'] = 'Page_Not_Found';
+$route['Profile'] = 'Profile/index';
 
-$route['404_override'] = 'Page_Not_Found';
+$route['default_controller'] = 'Home';
+$route['(:any)'] = 'Oops';
+
+$route['404_override'] = 'Oops';
 $route['translate_uri_dashes'] = FALSE;

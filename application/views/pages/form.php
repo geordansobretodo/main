@@ -3,7 +3,7 @@
   <div class="header">
     <div class="title">What's on your mind?</div>
     <div class="button">
-      <button class="btn btn-secondary">Back</button>
+      <a href="<?= base_url('Home') ?>"><button class="btn btn-secondary">Back</button></a>
     </div>
   </div>
   <div class="content">
@@ -11,7 +11,12 @@
       <div class="user-details">
         <div class="input-box">
           <span class="details">Province</span>
-          <input type="text" id="province" placeholder="Enter province" required>
+          <select id="province" name="province" required>
+            <option value="" disabled>Select Province</option>
+            <?php foreach ($province as $prov) { ?>
+              <option value="<?= htmlspecialchars($prov) ?>"><?= htmlspecialchars($prov) ?></option>
+            <?php } ?>
+          </select>
         </div>
         <div class="input-box">
           <span class="details">Country</span>
