@@ -70,7 +70,7 @@
                             <a href="<?= base_url('Register') ?>" class="dropdown-item">Create an account</a>
                             <a href="<?= base_url('Login') ?>" class="dropdown-item">Login</a>
                         <?php } else { ?>
-                            <a href="<?= base_url('Profile') ?>" class="dropdown-item">My Profile</a>
+                            <a href="<?= base_url('Profile/index?id=' . $this->session->userdata('id')) ?>" class="dropdown-item">My Profile</a>
                             <a href="<?= base_url('Home/tour') ?>" class="dropdown-item">Inbox</a>
                             <a href="<?= base_url('Home/booking') ?>" class="dropdown-item">Notifications</a>
                             <a href="<?= base_url('Home/gallery') ?>" class="dropdown-item">Account Settings</a>

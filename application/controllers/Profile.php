@@ -9,6 +9,7 @@ class Profile extends MY_Controller {
             $this->load->library('Set_views');
 
             $this->load->model('Home_model');
+            $this->load->model('User_model');
     }
 
     public function index() {
@@ -16,20 +17,22 @@ class Profile extends MY_Controller {
     }
 
     public function profile() {
-        $result = $this->Home_model->get_db();
+        $id = $this->input->get('id');
+        $results = $this->Home_model->get_db($id);
         $data = array(
-            'user_id' => $result['user_id'],
-            'imagePath' => isset($result['image_path']) ? $result['image_path'] : null,
-            'name' => $result['fname'] . ' ' . $result['mname'] . ' ' . $result['lname'],
-            'gender' => $result['gender'],
-            'address' => $result['blkLot'] . ' ' . $result['phase'] . ' ' . $result['street'],
-            'AccountStat' => $result['account_status'],
-            'age' => $result['age'],
-            'employStat' => $result['employStat']
+            'user_id' => $results['user_id'],
+            'imagePath' => isset($results['image_path']) ? $results['image_path'] : null,
+            'name' => $results['fname'] . ' ' . $results['mname'] . ' ' . $results['lname'],
+            'gender' => $results['gender'],
+            'address' => $results['blkLot'] . ' ' . $results['phase'] . ' ' . $results['street'],
+            'AccountStat' => $results['account_status'],
+            'age' => $results['age'],
+            'employStat' => $results['employStat'],
+            'username' => isset($results['username']) ? $results['username'] : null,
+            'email' => isset($results['email']) ? $results['email'] : null,
+            'password' => isset($results['password']) ? $results['password'] : null
         );
-
         $this->render($this->set_views->profile(), 'Profile', $data);
     }
-
 }
 

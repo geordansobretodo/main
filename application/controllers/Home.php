@@ -3,12 +3,18 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Home extends MY_Controller
 {
+        private $apis = array(
+                'gpt' => '',
+                'maps' => '',
+                'tripAd' => ''
+        );
 
         public function __construct()
         {
                 parent::__construct();
 
                 $this->load->library('Set_views');
+                $this->load->model('Booking_model');
         }
 
         public function index()
@@ -131,10 +137,16 @@ class Home extends MY_Controller
 
         public function form()
         {
-                // if ($this->session->userdata('log') != 'logged') {
-                //     redirect('Login/index');
-                // } else {
-                $this->render_booking($this->set_views->form(), 'Booking');
-                // }
+                $province_data = $this->Booking_model->get_province_data();
+                $place_data = $this->Booking_model->get_place_data();
+
+                $data = array(
+                        'gpt' => $this->apis['gpt'],
+                        'maps' => $this->apis['maps'],
+                        'province' => $province_data,
+                        'places' => $place_data
+                );
+
+                $this->render_booking($this->set_views->form(), 'Booking', $data);
         }
 }

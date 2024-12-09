@@ -9,12 +9,12 @@
   <div class="content">
     <form id="preferenceForm">
       <div class="user-details">
-        <div class="input-box">
+        <div class="input-box mb-3">
           <span class="details">Province</span>
-          <select id="province" name="province" required>
-            <option value="" disabled>Select Province</option>
+          <select id="province" name="province" class="form-select" required>
+            <option value="" selected disabled>Select Province</option>
             <?php foreach ($province as $prov) { ?>
-              <option value="<?= htmlspecialchars($prov) ?>"><?= htmlspecialchars($prov) ?></option>
+              <option value="<?= htmlspecialchars($prov['value']) ?>"><?= htmlspecialchars($prov['value']) ?></option>
             <?php } ?>
           </select>
         </div>
@@ -22,26 +22,44 @@
           <span class="details">Country</span>
           <input type="text" id="country" placeholder="Enter country" value="Philippines" disabled required>
         </div>
-        <div class="input-box">
-          <span class="details">My Location</span>
-          <input type="text" id="currentLoc" placeholder="Saan?" required>
+        <div class="input-box mb-3">
+          <select id="currentLoc" name="currentLoc" class="form-select" hidden>
+            <option id="nearbyOption" value="near me" selected>Nearby</option>
+            <?php foreach ($province as $prov) { ?>
+              <option value="<?= htmlspecialchars($prov['value']) ?>"><?= htmlspecialchars($prov['value']) ?></option>
+            <?php } ?>
+          </select>
+        </div>
+        <div class="input-box mb-3">
+          <select id="filters" name="filters" class="form-select">
+          <option value="" selected disabled>Filter</option>
+          <option value="Halal">Halal</option>
+          <?php foreach ($province as $prov) { ?>
+              <option value="<?= htmlspecialchars($prov['value']) ?>"><?= htmlspecialchars($prov['value']) ?></option>
+            <?php } ?>
+          </select>
         </div>
       </div>
       <div class="place-details">
-        <input type="radio" name="place" id="dot-1" value="Private Pool">
-        <input type="radio" name="place" id="dot-2" value="Beach">
-        <input type="radio" name="place" id="dot-3" value="Waterfall">
-        <span class="place-title">Place</span>
-        <div class="category">
-          <label for="dot-1"><span class="dot one"></span><span class="place">Private Pool</span></label>
-          <label for="dot-2"><span class="dot two"></span><span class="place">Beach</span></label>
-          <label for="dot-3"><span class="dot three"></span><span class="place">Waterfall</span></label>
+      <div class="input-box mb-3">
+          <span class="details">Place</span>
+          <select id="place" name="place" class="form-select" required>
+            <option value="" selected disabled>Select Place</option>
+            <?php foreach ($places as $place) { ?>
+              <option value="<?= htmlspecialchars($place['value']) ?>"><?= htmlspecialchars($place['value']) ?></option>
+            <?php } ?>
+          </select>
         </div>
       </div>
+      <div class="input-box">
+          <span class="details">Budget</span>
+          <input type="text" id="budget" name="budget" placeholder="Enter country" value="Philippines" disabled required>
+        </div>
       <div class="button">
         <input type="submit" value="Go">
       </div>
     </form>
+    <div class="" id="results"></div>
     <div id="output" style="margin-top: 20px; padding: 30px; background-color: #f0f0f0; border-radius: 5px;"></div>
     <div id="map" style="height: 150px; width: 100%;"></div>
   </div>

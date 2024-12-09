@@ -64,7 +64,10 @@
                             <button type="button" class="btn btn-primary">
                                 See More
                             </button>
-                            <button type="button" onclick="editProfile(<?= $user_id ?>)" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#portalModal">
+                            <?= form_open('Profile/profile?id=' . $user_id) ?>
+                            <input type="hidden" class="form-control" name="id" value="" />
+                            <?= form_close() ?>
+                            <button type="submit" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#portalModal">
                                 Portal Account
                             </button>
                         </div>
@@ -83,7 +86,11 @@
                                             <div class="card-body">
                                                 <div class="mb-3">
                                                     <label for="username" class="form-label">Username</label>
-                                                    <input type="text" class="form-control" id="username" required name="username" value="" />
+                                                    <input type="text" class="form-control" id="username" required name="username" value="<?= $username ?>" readonly/>
+                                                    <label for="email" class="form-label">Email</label>
+                                                    <input type="text" class="form-control" id="email" required name="username" value="<?= $email ?>" readonly/>
+                                                    <label for="password" class="form-label">Password</label>
+                                                    <input type="text" class="form-control" id="password" required name="username" value="<?= $password ?>" readonly/>
                                                     <input type="hidden" class="form-control" name="user_id" id="selectedUserId" value="" />
                                                 </div>
                                                 <div class="mb-3">

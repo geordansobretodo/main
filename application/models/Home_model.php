@@ -11,8 +11,8 @@ class Home_model extends CI_Model
         $this->load->database('sample');
     }
 
-    public function get_db() {
-        $this->db->where('user_id', 12);
+    public function get_db($id) {
+        $this->db->where('user_id', $id);
         $result = $this->db->get('user_accounts');
         return $result->row_array();
     }
