@@ -53,13 +53,18 @@
       </div>
       <div class="input-box">
           <span class="details">Budget</span>
-          <input type="text" id="budget" name="budget" placeholder="Enter country" value="Philippines" disabled required>
+          <select id="busget" name="budget" class="form-select">
+            <option value="" selected disabled>Please Select</option>
+            <?php foreach ($budgets as $budget) { ?>
+              <option value="<?= htmlspecialchars($budget['value']) ?>"><?= htmlspecialchars($budget['value']) ?></option>
+            <?php } ?>
+          </select>
         </div>
       <div class="button">
         <input type="submit" value="Go">
       </div>
     </form>
-    <div class="" id="results"></div>
+    <div id="results"></div>
     <div id="output" style="margin-top: 20px; padding: 30px; background-color: #f0f0f0; border-radius: 5px;"></div>
     <div id="map" style="height: 150px; width: 100%;"></div>
   </div>

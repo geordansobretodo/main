@@ -3,6 +3,7 @@
     event.preventDefault();
 
     // Collect user input
+    const userBudget = document.getElementById('budget').value;
     const category = document.getElementById('place').value;
     const location = document.getElementById('location').value;
     const filters = document.getElementById('filters').value;
@@ -129,7 +130,7 @@
   }
 </script>
 
-<script>
+<!-- <script>
   let map;
 
   function initMap(keywords) {
@@ -264,7 +265,7 @@
   //     document.getElementById('output').innerText = 'An error occurred. Please try again later.';
   //   }
   // });
-</script>
+</script> -->
 
 <!-- Google Maps API -->
 <script src="<?= $maps ?>" async defer></script>

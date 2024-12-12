@@ -123,4 +123,14 @@ class Set_views
     public function profile() {
         return 'pages/profile';
     }
+
+    // ADMIN LOG IN
+    public function admin_login() {
+        return 'pages/admin_login';
+    }
+
+    // ADMIN DASHBOARD
+    public function admin_dashboard() {
+        return 'pages/admin_dashboard';
+    }
 }

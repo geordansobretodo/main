@@ -139,12 +139,16 @@ class Home extends MY_Controller
         {
                 $province_data = $this->Booking_model->get_province_data();
                 $place_data = $this->Booking_model->get_place_data();
+                $budget_data = $this->Booking_model->get_budget_data();
+                $filter_data = $this->Booking_model->get_filter_data();
 
                 $data = array(
                         'gpt' => $this->apis['gpt'],
                         'maps' => $this->apis['maps'],
                         'province' => $province_data,
-                        'places' => $place_data
+                        'places' => $place_data,
+                        'budget' => $budget_data,
+                        'filter' => $filter_data
                 );
 
                 $this->render_booking($this->set_views->form(), 'Booking', $data);
