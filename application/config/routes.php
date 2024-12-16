@@ -13,6 +13,8 @@ $route['Login'] = 'Login';
 $route['Logout'] = 'Login/logout';
 $route['Register'] = 'Register';
 
+$route['Admin'] = 'Admin/index';
+
 $route['default_controller'] = 'Home';
 $route['(:any)'] = 'Oops';
 

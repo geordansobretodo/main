@@ -133,4 +133,14 @@ class Set_views
     public function admin_dashboard() {
         return 'pages/admin_dashboard';
     }
+
+    // USERS
+    public function admin_users() {
+        return 'pages/users';
+    }
+
+    // USERS
+    public function admin_option_list() {
+        return 'pages/option_list';
+    }
 }

@@ -32,11 +32,6 @@
 
 <body>
 
-
-    <?= $headernavigation ? $headernavigation : ''; ?>
-
-
-
     <!-- MAIN COMPONENT -->
 
 
@@ -47,6 +42,9 @@
 
     <!-- MAIN COMPONENT -->
 
+
+
+    <?= $footerscripts ? $footerscripts : ''; ?>
 
 </body>
 

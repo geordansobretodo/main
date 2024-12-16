@@ -72,4 +72,30 @@ class MY_Controller extends CI_Controller
 
         $this->load->view('Layout/BookingFront', $this->template);
     }
+
+    public function render_admin_login($middleParam = '', $title = '', $data = [])
+    {
+        $middleParam = $middleParam ?: $this->middle;
+        $data = array_merge($this->data, $data);
+
+        $this->template['title'] = $title;
+        $this->template['headerscripts'] = $this->load->view('Admin/Login_HeaderScripts.php', $data, true);
+        $this->template['middle'] = $this->load->view($middleParam . '.php', $data, true);
+        $this->template['footerscripts'] = $this->load->view('Admin/Login_FooterScripts.php', $data, true);
+
+        $this->load->view('Layout/AdminLoginFront', $this->template);
+    }
+
+    public function render_admin($middleParam = '', $title = '', $data = [])
+    {
+        $middleParam = $middleParam ?: $this->middle;
+        $data = array_merge($this->data, $data);
+
+        $this->template['title'] = $title;
+        $this->template['headerscripts'] = $this->load->view('Admin/HeaderScripts.php', $data, true);
+        $this->template['headernavigation'] = $this->load->view('Admin/HeaderNavigation.php', $data, true);
+        $this->template['middle'] = $this->load->view($middleParam . '.php', $data, true);
+
+        $this->load->view('Layout/AdminFront', $this->template);
+    }
 }

@@ -6,8 +6,7 @@ class Booking_model extends CI_Model
 {
     public function __construct()
     {
-        // $this->load->database('admin');
-        $this->load->database('admin_local');
+        $this->load->database();
     }
 
     public function get_province_data() {
